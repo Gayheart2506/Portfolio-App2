@@ -1,0 +1,18 @@
+{% extends 'pages/layout.html' %}
+
+{% block title %} Project Details {% endblock title %}
+
+{% block body %}
+
+    <h1 class="container">{{ project.title }}</h1>
+    <div class="row container">
+        <div class="col-md-4">
+            <h5>About the project:</h5>
+            <p>{{ project.description }}</p>
+            <br>
+            <h5>Technology used:</h5>
+            <p>{{ project.technology }}</p>
+        </div>
+    </div>
+
+{% endblock body %}
