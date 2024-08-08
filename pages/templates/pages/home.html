@@ -3,5 +3,10 @@
 {% block title %} Welcome {% endblock title %}
 
 {% block body %}
-    <h1>Hello, world !!</h1>
+
+    <div class="container">
+        <h1 class="container mt-3">Hello, world !!</h1>
+        <a href="{% url 'projects:proj_page' %}" class="btn btn-primary mt-3">View Projects</a>
+    </div>
+    
 {% endblock body %}
